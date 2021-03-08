@@ -1,7 +1,9 @@
 package main
 
-import "github.com/"
+import (
+	"github.com/crsov/goanalyse/ui"
+)
 
-func main()  {
-	ui.StartUi
+func main() {
+	ui.StartUi()
 }

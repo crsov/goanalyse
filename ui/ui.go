@@ -12,6 +12,7 @@ func StartUi() {
 	if err != nil {
 		log.Panicln(err)
 	}
+
 	defer ui.Close()
 
 	ui.SetManagerFunc(layout)
@@ -27,11 +28,12 @@ func StartUi() {
 
 func layout(ui *gocui.Gui) error {
 	maxX, maxY := ui.Size()
-	if v, err := ui.SetView("hello", maxX/2-7, maxY/2, maxX/2+7, maxY/2+2); err != nil {
+
+	if view, err := ui.SetView("hello", maxX, maxY, maxX, maxY); err != nil {
 		if err != gocui.ErrUnknownView {
 			return err
 		}
-		fmt.Fprintln(v, "Hello world!")
+		fmt.Fprintln(view, "ugashlgkjsdhglksjdghlaksdjfhasdlkjghaslfkgjasfhlkasfjghlskjghldsfkjadsfhlakdfhgasldjgasldkajladkdjfasglkfjgsdahlkfjgasglkjasflakjgal")
 	}
 	return nil
 }
