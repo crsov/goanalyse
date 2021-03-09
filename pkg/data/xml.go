@@ -23,6 +23,6 @@ func Xml() {
 	}
 	var roGames roGame
 	xml.Unmarshal(inBytes, &roGames)
-	fmt.Println(roGames.white)
+	fmt.Println(roGames)
 
 }
