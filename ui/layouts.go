@@ -11,7 +11,7 @@ func layout(g *gocui.Gui) error {
 		if err != gocui.ErrUnknownView {
 			return err
 		}
-		fmt.Fprintln(v, "Hello world!")
+		fmt.Fprintln(v, "Hello!")
 	}
 	return nil
 }
