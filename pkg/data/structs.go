@@ -1,12 +1,15 @@
 package data
 
+import "encoding/xml"
+
 type roGame struct {
-	id     int    `xml:"id"`
-	black  string `xml:"black"`
-	white  string `xml:"white"`
-	winner string `xml:"winner"`
-	moves  string `xml:"moves"`
-	rule   string `xml:"rule"`
+	XMLName xml.Name `xml:"game"`
+	id      int      `xml:"id"`
+	black   string   `xml:"black"`
+	white   string   `xml:"white"`
+	winner  string   `xml:"winner"`
+	moves   string   `xml:"moves"`
+	rule    string   `xml:"rule"`
 }
 
 type rnGame struct {
