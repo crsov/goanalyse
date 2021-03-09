@@ -3,42 +3,23 @@ package data
 import (
 	"encoding/xml"
 	"fmt"
-	"io"
+	"io/ioutil"
 	"os"
 )
 
 func Xml() {
 
-	f, err := os.Open("data.xml")
+	xmlFile, err := os.Open("data.xml")
 	if err != nil {
 		panic(err)
 	}
+	fmt.Println("Successfully Opened xml")
 
-	defer f.Close()
+	defer xmlFile.Close()
 
-	decoder := xml.NewDecoder(f)
+	inBytes, _ := ioutil.ReadAll(xmlFile)
 
-	roGames := make([]roGame, 0)
-	for {
-		tok, err := decoder.Token()
-		if err != nil {
-			if err == io.EOF {
-				break
-			}
-			panic(err)
-		}
-		if tok == nil {
-			break
-		}
-		switch tokType := tok.(type) {
-		case xml.StartElement:
-			if tokType.Name.Local == "game" {
-				// Декодирование элемента в структуру
-				var g roGame
-				decoder.DecodeElement(&g, &tokType)
-				roGames = append(roGames, g)
-			}
-		}
-	}
+	var roGames roGame
+	xml.Unmarshal(inBytes, &roGames)
 	fmt.Println(roGames)
 }
