@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/crsov/goanalyse/ui"
+	"github.com/crsov/goanalyse/cui"
 )
 
 func main() {
-	ui.StartUi()
+	cui.StartUi()
 }
