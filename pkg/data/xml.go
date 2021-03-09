@@ -3,6 +3,7 @@ package data
 import (
 	"encoding/xml"
 	"fmt"
+	"io"
 	"os"
 )
 
@@ -21,6 +22,9 @@ func Xml() {
 	for {
 		tok, err := decoder.Token()
 		if err != nil {
+			if err == io.EOF {
+				break
+			}
 			panic(err)
 		}
 		if tok == nil {
