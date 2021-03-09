@@ -3,6 +3,7 @@ package data
 import (
 	"encoding/xml"
 	"fmt"
+	"golang.org/x/text/encoding/charmap"
 	"io/ioutil"
 	"os"
 )
@@ -17,7 +18,12 @@ func Xml() {
 
 	defer xmlFile.Close()
 
-	inBytes, _ := ioutil.ReadAll(xmlFile)
+	decoder := charmap.Windows1252.NewDecoder()
+	reader := decoder.Reader(xmlFile)
+	inBytes, err := ioutil.ReadAll(reader)
+	if err != nil {
+		panic(err)
+	}
 
 	var roGames roGame
 	xml.Unmarshal(inBytes, &roGames)
