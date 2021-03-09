@@ -2,7 +2,6 @@ package data
 
 import (
 	"fmt"
-	"golang.org/x/text/encoding/charmap"
 	"io/ioutil"
 	"os"
 )
@@ -17,9 +16,9 @@ func Xml() {
 
 	defer xmlFile.Close()
 
-	decoder := charmap.Windows1252.NewDecoder()
-	reader := decoder.Reader(xmlFile)
-	inBytes, err := ioutil.ReadAll(reader)
+	//decoder := charmap.Windows1252.NewDecoder()
+	//reader := decoder.Reader(xmlFile)
+	inBytes, err := ioutil.ReadAll(xmlFile)
 	if err != nil {
 		panic(err)
 	}
