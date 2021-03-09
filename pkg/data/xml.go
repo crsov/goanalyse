@@ -1,7 +1,6 @@
 package data
 
 import (
-	"encoding/xml"
 	"fmt"
 	"golang.org/x/text/encoding/charmap"
 	"io/ioutil"
@@ -24,8 +23,8 @@ func Xml() {
 	if err != nil {
 		panic(err)
 	}
-
-	var roGames roGame
-	xml.Unmarshal(inBytes, &roGames)
-	fmt.Println(roGames)
+	fmt.Println(string(inBytes))
+	// var roGames roGame
+	// xml.Unmarshal(inBytes, &roGames)
+	// fmt.Println(roGames)
 }
