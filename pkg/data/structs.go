@@ -1,5 +1,11 @@
 package data
 
+import "encoding/xml"
+
+type roRoot struct {
+	XMLNme  xml.Name `xml:"root"`
+	RoGames []roGame
+}
 type roGame struct {
 	Id     int    `xml:"root>game>id"`
 	Black  string `xml:"root>game>black"`
