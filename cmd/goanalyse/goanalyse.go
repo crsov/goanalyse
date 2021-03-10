@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	data.Xml("data.Xml")
+	data.Xml()
 	//cui.StartUi()
 }
