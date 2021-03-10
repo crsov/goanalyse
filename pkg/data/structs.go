@@ -1,10 +1,10 @@
 package data
 
 type ro struct {
-	RoGames []roGame `xml:"root>game"`
+	RoGames []roGame `xml:"game"`
 }
 type roGame struct {
-	Id     int    `xml:"id"`
+	Id     string `xml:"id"`
 	Black  string `xml:"black"`
 	White  string `xml:"white"`
 	Moves  string `xml:"moves"`
