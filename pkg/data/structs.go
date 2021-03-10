@@ -1,7 +1,7 @@
 package data
 
 type roRoot struct {
-	RoGames []roGame
+	RoGames []roGame `xml:"root>game"`
 }
 type roGame struct {
 	Id     int    `xml:"game>id"`
