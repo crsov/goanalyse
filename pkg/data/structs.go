@@ -7,11 +7,11 @@ type roRoot struct {
 	RoGames []roGame
 }
 type roGame struct {
-	Id     int    `xml:"root>game>id"`
-	Black  string `xml:"root>game>black"`
-	White  string `xml:"root>game>white"`
-	Moves  string `xml:"root>game>moves"`
-	Alt5   string `xml:"root>game>alt_5"`
-	Rule   string `xml:"root>game>rule"`
-	Winner string `xml:"root>game>winner"`
+	Id     int    `xml:"id"`
+	Black  string `xml:"black"`
+	White  string `xml:"white"`
+	Moves  string `xml:"moves"`
+	Alt5   string `xml:"alt_5"`
+	Rule   string `xml:"rule"`
+	Winner string `xml:"winner"`
 }
