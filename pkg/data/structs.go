@@ -1,6 +1,6 @@
 package data
 
-type roRoot struct {
+type ro struct {
 	RoGames []roGame `xml:"root>game"`
 }
 type roGame struct {

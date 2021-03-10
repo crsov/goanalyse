@@ -7,9 +7,9 @@ import (
 	"os"
 )
 
-func Xml() {
+func Xml(file string) {
 
-	xmlFile, err := os.Open("data.xml")
+	xmlFile, err := os.Open(file)
 	if err != nil {
 		panic(err)
 	}
@@ -21,7 +21,7 @@ func Xml() {
 	if err != nil {
 		panic(err)
 	}
-	var ro roRoot
+	var ro ro
 	xml.Unmarshal(inBytes, &ro)
 	fmt.Println(ro)
 
