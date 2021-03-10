@@ -9,7 +9,7 @@ import (
 
 func Xml() {
 
-	xmlFile, err := os.Open("data.xml")
+	xmlFile, err := os.Open("truedata.xml")
 	if err != nil {
 		panic(err)
 	}
