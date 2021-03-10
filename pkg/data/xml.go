@@ -22,7 +22,10 @@ func Xml() {
 		panic(err)
 	}
 	var ro ro
-	xml.Unmarshal(inBytes, &ro)
+	err = xml.Unmarshal(inBytes, &ro)
+	if err != nil {
+		panic(err)
+	}
 	fmt.Println(ro)
 
 }
