@@ -7,9 +7,9 @@ import (
 	"os"
 )
 
-func Xml(file string) {
+func Xml() {
 
-	xmlFile, err := os.Open(file)
+	xmlFile, err := os.Open("data.xml")
 	if err != nil {
 		panic(err)
 	}
