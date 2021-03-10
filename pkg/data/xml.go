@@ -21,8 +21,8 @@ func Xml() {
 	if err != nil {
 		panic(err)
 	}
-	var roGames roGame
-	xml.Unmarshal(inBytes, &roGames)
-	fmt.Println(roGames)
+	var roGame roGame
+	xml.Unmarshal(inBytes, &roGame)
+	fmt.Println(roGame)
 
 }
