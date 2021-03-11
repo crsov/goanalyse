@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	data.Xml()
+	data.ParseXml("truedata.xml")
 	//cui.StartUi()
 }
