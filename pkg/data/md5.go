@@ -2,6 +2,7 @@ package data
 
 import (
 	"crypto/md5"
+	"encoding/hex"
 	"io"
 	"log"
 	"os"
@@ -10,7 +11,7 @@ import (
 func FileMD5(path string) string {
 	f, err := os.Open(path)
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 	defer f.Close()
 
@@ -19,5 +20,5 @@ func FileMD5(path string) string {
 		log.Fatal(err)
 	}
 
-	return string(h.Sum(nil))
+	return hex.EncodeToString(h.Sum(nil)[:])
 }

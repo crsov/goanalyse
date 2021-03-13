@@ -1,10 +1,11 @@
 package main
 
 import (
+	"fmt"
 	"github.com/crsov/goanalyse/pkg/data"
 )
 
 func main() {
-	data.ParseXml("truedata.xml")
+	fmt.Println((data.LoadAccordingToCache("data.xml")))
 	//cui.StartUi()
 }
