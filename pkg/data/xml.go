@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func ParseXml(file string) {
+func ParseXml(file string) ro {
 
 	xmlFile, err := os.Open(file)
 	if err != nil {
@@ -26,6 +26,6 @@ func ParseXml(file string) {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println(ro)
 
+	return ro
 }
