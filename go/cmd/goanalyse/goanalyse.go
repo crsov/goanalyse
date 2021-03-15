@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/crsov/goanalyse/pkg/gui"
-	"github.com/crsov/goanalyse/pkg/data"
+	"github.com/crsov/goanalyse/go/pkg/data"
+	"github.com/crsov/goanalyse/go/pkg/gui"
 )
 
 func main() {
