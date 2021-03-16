@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<root>
+<game>
+<id>0002</id>
+<creation_time>1062547200</creation_time>
+<black>warpod</black>
+<white>sai</white>
+<turn_color>black</turn_color>
+<board>h8 h9 h6 i10 i6 i9 g9 g8 j11 i7 i8 k7 g6 j6 f8 e6 f7 h10 j8 k10 j10 j9 k8 l8 i5 g7 h7 f5 d9 l9 k9 e8 f10 f9 d10 d8 h12 i11 d7 l10 l7 i13</board>
+<moves>h8 h9 h6 i10 i6 i9 g9 g8 j11 i7 i8 k7 g6 j6 f8 e6 f7 h10 j8 k10 j10 j9 k8 l8 i5 g7 h7 f5 d9 l9 k9 e8 f10 f9 d10 d8 h12 i11 d7 l10 l7 i13</moves>
+<alt5></alt5>
+<proposition></proposition>
+<proposer></proposer>
+<status>finished</status>
+<rule>classic</rule>
+<time>0</time>
+<tpm>0</tpm>
+<start_time>1062547200</start_time>
+<end_time>1062547200</end_time>
+<winner>white</winner>
+<winby>resign</winby>
+<time_left_black>0</time_left_black>
+<time_left_white>0</time_left_white>
+<tid></tid>
+</game>
+
+<game>
+<id>0004</id>
+<creation_time>1062547200</creation_time>
+<black>sasanono</black>
+<white>warpod</white>
+<turn_color>black</turn_color>
+<board>h8 h9 h6 i10 i6 i9 g9 g8 j11 i7 j7 g6 h5 k8 j9 j8 l6 f5 i11 g4 e6 e4</board>
+<moves>h8 h9 h6 i10 i6 i9 g9 g8 j11 i7 j7 g6 h5 k8 j9 j8 l6 f5 i11 g4 e6 e4</moves>
+<alt5></alt5>
+<proposition></proposition>
+<proposer></proposer>
+<status>finished</status>
+<rule>classic</rule>
+<time>0</time>
+<tpm>0</tpm>
+<start_time>1062547200</start_time>
+<end_time>1062547200</end_time>
+<winner>white</winner>
+<winby>resign</winby>
+<time_left_black>0</time_left_black>
+<time_left_white>0</time_left_white>
+<tid></tid>
+</game>
+
+<game>
+<id>0005</id>
+<creation_time>1062547200</creation_time>
+<black>warpod</black>
+<white>kvik</white>
+<turn_color>white</turn_color>
+<board>h8 h9 h6 i10 i6 i9 g9 g8 j11 i7 g6 j6 j7 h5 j9 j8 h10 i11 i8 h7 f7 e7 f10 e11 i12 h13 j13 j12 e9 f9 l9 m10 e5 f6 d8 c7 d10 e10 d11 d9 h12 g11 f11 e12 g3 h2 k10 m8 m9 k5 k9 n9 k11 k12 l11 m12 l12</board>
+<moves>h8 h9 h6 i10 i6 i9 g9 g8 j11 i7 g6 j6 j7 h5 j9 j8 h10 i11 i8 h7 f7 e7 f10 e11 i12 h13 j13 j12 e9 f9 l9 m10 e5 f6 d8 c7 d10 e10 d11 d9 h12 g11 f11 e12 g3 h2 k10 m8 m9 k5 k9 n9 k11 k12 l11 m12 l12</moves>
+<alt5></alt5>
+<proposition></proposition>
+<proposer></proposer>
+<status>finished</status>
+<rule>classic</rule>
+<time>0</time>
+<tpm>0</tpm>
+<start_time>1062547200</start_time>
+<end_time>1062547200</end_time>
+<winner>black</winner>
+<winby>resign</winby>
+<time_left_black>0</time_left_black>
+<time_left_white>0</time_left_white>
+<tid></tid>
+</game>
+
+<game>
