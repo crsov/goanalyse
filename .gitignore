@@ -1,6 +1,5 @@
 .idea
 *.swp
 *.xml
-*...\.sum
-*.gob
+cache
 goanalyse$
