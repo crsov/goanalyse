@@ -1,7 +1,7 @@
-canv = querySelector("#canvas")
-var ctx = canv.getContext('2d')
+canv = Document.querySelector("#canvas")
+let ctx = canv.getContext('2d')
 
-var boardImage = new Image()
+let boardImage = new Image()
 boardImage.src = 'board.png'
 
 window.onload = () => {
