@@ -1,5 +1,6 @@
 .idea
 *.swp
 *.xml
+*.rif
 cache
 goanalyse$

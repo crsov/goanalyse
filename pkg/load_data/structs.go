@@ -1,4 +1,4 @@
-package data
+package load_data
 
 import "encoding/xml"
 
